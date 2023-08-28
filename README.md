@@ -72,9 +72,8 @@ The reason why it's called **one time** pad is because you should only use it ON
 
 Then you XOR your message with the one time pad using the XOR LUT (`LUT2`) below:
 
-| | | | | | | |
-| --- | --- | --- | --- | --- | --- | --- |
 |   | 0 | 1 | 2 | 3 | 4 | 5 |
+| --- | --- | --- | --- | --- | --- | --- |
 | 0 | 0 | 1 | 2 | 3 | 4 | 5 |
 | 1 | 1 | 0 | 3 | 2 | 5 | 4 |
 | 2 | 2 | 3 | 0 | 1 | 6 | 7 |

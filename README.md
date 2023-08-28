@@ -39,34 +39,36 @@ Ok, so `A` is 41. That's your `plain text`.
 Then you XOR this with a table of `key`s, your one time pad, you can generate with 
 
 ```
-head -c 256 /dev/random | xxd -p | tr -dc '0-5' | fold -w 5
+head -c 256 /dev/random | xxd -p | tr -dc '0-5' | fold -w 6
 ```
 
 Run it on Linux of course.
 
-This takes 256 bytes from kernel hardware entropy source, converts them into hex, filter 0-5, then converts them into 5 digit groups.
+This takes 256 bytes from kernel hardware entropy source, converts them into hex, filter 0-5, then converts them into 6 digit groups.
 
 This should look like this:
 
 ```
-40520
-45452
-20550
-22043
-54545
-03342
-04050
-43544
-21210
-14130
-52302
+405201
+415255
+041512
+350505
+223232
+315551
+150425
+223453
+014244
+412052
+521450
+214323
+044245
 ```
 
 This is your one-time-pad, you and your partner(😭 nobody to use it with) should note this down with you. 
 
 Be mindful of what's under your paper, did you imprint your keys onto the paper below? Don't be lazy and use a printer, they remember stuff.
 
-The reason why it's called **one time** pad is because you should only use it ONCE, cross the key you've used with a pen ~~40520~~ and never use it again.
+The reason why it's called **one time** pad is because you should only use it ONCE, cross the key you've used with a pen ~~405201~~ and never use it again.
 
 ### Encryption
 

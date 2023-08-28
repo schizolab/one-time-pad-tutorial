@@ -91,7 +91,7 @@ To decrypt, you take 0, from the row header, then look at your keys, which is 4,
 
 Now you have 41, look up in the `LUT1`, YESSSS you have the orignal `A`!!
 
-### Flow control
+### Protocol header
 
 You can say: ok imma bout to use the key starting at line 5. Then you tell your encrypted message.
 

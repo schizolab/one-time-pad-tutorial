@@ -66,9 +66,7 @@ This is your one-time-pad, you and your partner(😭 nobody to use it with) shou
 
 Be mindful of what's under your paper, did you imprint your keys onto the paper below? Don't be lazy and use a printer, they remember stuff.
 
-The reason why it's called **one time** pad is because you should only use it ONCE, cross the key you've used with a pen and never use it again.
-
-You can say: ok imma bout to use the key starting at line 5. Then you tell your encrypted message.
+The reason why it's called **one time** pad is because you should only use it ONCE, cross the key you've used with a pen ~~40520~~ and never use it again.
 
 ### Encryption
 
@@ -92,6 +90,10 @@ So to encrypt `A`(41) is like, we have 40 in the `key` right? 4 XOR 4 = 0, 1 XOR
 To decrypt, you take 0, from the row header, then look at your keys, which is 4, index with the column header, that gives you 4, that's you `plain text`. Do the same with 1, you get 1. 
 
 Now you have 41, look up in the `LUT1`, YESSSS you have the orignal `A`!!
+
+### Flow control
+
+You can say: ok imma bout to use the key starting at line 5. Then you tell your encrypted message.
 
 ## The Python scripts in this repo
 

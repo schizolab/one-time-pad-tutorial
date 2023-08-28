@@ -62,7 +62,9 @@ This should look like this:
 52302
 ```
 
-This is your one-time-pad, you and your partner(😭 nobody to use it with) should note this down with you, be mindful of what's under your paper, did you imprint your keys onto the paper below? Don't be lazy and use a printer, they remember stuff.
+This is your one-time-pad, you and your partner(😭 nobody to use it with) should note this down with you. 
+
+Be mindful of what's under your paper, did you imprint your keys onto the paper below? Don't be lazy and use a printer, they remember stuff.
 
 The reason why it's called **one time** pad is because you should only use it ONCE, cross the key you've used with a pen and never use it again.
 

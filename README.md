@@ -86,7 +86,13 @@ Then you XOR your message with the one time pad using the XOR LUT (`LUT2`) below
 
 So to encrypt `A`(41) is like, we have 40 in the `key` right? 4 XOR 4 = 0, 1 XOR 0 = 1. Your `cipher text` is 01.
 
-#### You might end up with a 6 or 7 but that's ok
+### Decryption
+
+To decrypt, you take 0, from the row header, then look at your keys, which is 4, index with the column header, that gives you 4, that's you `plain text`. Do the same with 1, you get 1. 
+
+Now you have 41, look up in the `LUT1`, YESSSS you have the orignal `A`!!
+
+#### You might end up with a 6 or 7 in encryption but that's ok
 
 Let's say
 A XOR B == C
@@ -96,12 +102,6 @@ Then it is true that: C XOR B == A, and C XOR A == B
 Therefore, you find the 6 or 7 in the middle of the LUT, not the headers, and input the key from the vertical or horizontal header, and in another header it appears.
 
 Let's say you cipher 7, your key is 5, you find 7 in the middle, there are 4 instances. Then you input 5 from the horizontal header, you get 2 in the vertical header.
-
-### Decryption
-
-To decrypt, you take 0, from the row header, then look at your keys, which is 4, index with the column header, that gives you 4, that's you `plain text`. Do the same with 1, you get 1. 
-
-Now you have 41, look up in the `LUT1`, YESSSS you have the orignal `A`!!
 
 ### Protocol header
 
